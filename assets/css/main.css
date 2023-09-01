@@ -112,15 +112,11 @@ article section {
 }
 
 .card {
-    display: flex;
-    flex-wrap: wrap;
-    height: 250px;
-    flex-basis: 50%;
-    background-size:contain;
+    background-size:cover;
     background-position: center;
-    margin: 10px;
+    margin: 5px;
     border-radius: 25px;
-    opacity: 0.7;
+    opacity: .88;
     box-shadow: 3px 3px 5px black;
     transition: .3s;
     position: relative;
@@ -132,45 +128,54 @@ article section {
 }
 
 .card h3 {
-    display: flex;
-    bottom: 11px;
-    left: 10px;
     font-family: var(--font);
     color: var(--text);
-    background-color: rgb(128, 128, 128, 25%);
+    background-color: rgb(128, 128, 128, 65%);
     border-radius: 15px;
     padding: 15px;
     position: absolute;
+    bottom: 11px;
+    left: 10px;
+}
+
+.card p {
+    font-family: var(--font_two);
+    color: var(--text);
+    font-size: 50%;
+    position:absolute;
+    bottom: 11px;
+    left: 25px;
+
 }
 
 #work_1 {
     height: 300px;
     flex-basis: 100%;
-    background-image: url("./images/Horiseon.png");
+    background-image: url(../images/Horiseon.png);
 }
 
 #work_2 {
-    height: 250px;
-    flex-basis: 50%;
-    background-image: url('./assets/images/night-street-zoom.png');
+    height: 200px;
+    flex-basis: 48%;
+    background-image: url(../images/Terra-Eataly-LA.jpeg);
 }
 
 #work_3 {
-    height: 250px;
-    flex-basis: 50%;
-    background-image: url('./assets/images/dock-lake.jpeg');
+    height: 200px;
+    flex-basis: 48%;
+    background-image: url(../images/Bike-Shop.jpeg);
 }
 
 #work_4 {
-    height: 250px;
-    flex-basis: 50%;
-    background-image: url('./assets/images/railroad-fog.jpeg');
+    height: 200px;
+    flex-basis: 48%;
+    background-image: url(../images/railroad-fog.jpeg);
 }
 
 #work_5 {
-    height: 250px;
-    flex-basis: 50%;
-    background-image: url('./assets/images/skyscraper-up.jpeg');
+    height: 200px;
+    flex-basis: 48%;
+    background-image: url(../images/skyscraper-up.jpeg);
 }
 
 .contact h2 {
@@ -179,8 +184,10 @@ article section {
 }
 
 .contact section {
-    text-align: center;
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 50%;
 }
 
 .contact a {
