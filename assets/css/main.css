@@ -74,15 +74,17 @@ article {
 article h2 {
     font-family: var(--font);
     color: var(--text);
-    text-shadow:-3px -3px 5px black;
-    box-shadow:3px 0px 5px black;
+    text-shadow: -3px -3px 5px black;
+    box-shadow: 3px 0px 5px black;
     border-right: solid 8px #8b9f3f;
-    background-color:rgb(102, 109, 55, 15%);
-    border-radius:25px;    
+    background-color: rgb(102, 109, 55, 15%);
+    border-radius: 25px;
 }
 
 article section {
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
 }
 
 .about_me h2 {
@@ -94,49 +96,45 @@ article section {
     width: 50%;
     font-family: var(--font_two);
     color: var(--text);
-    text-shadow:3px 3px 5px black;
+    text-shadow: 3px 3px 5px black;
     line-height: 1.5;
+}
+
+
+.work h2 {
+    padding-right: 15.5%;
+    margin-right: 10%;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 50%;
-}
-
-.work h2 {
-    padding-right:15.5%;
-    margin-right: 10%;
-}
-
-.work img {
-    display: flex;
-    float: left;
-    width: 50%;
-    height: auto;
-    margin:10px;
-    border-radius: 25px;
-    opacity: 0.7;
-    box-shadow:3px 3px 5px black;
-    transition: .3s;
-}
-
-.work img:hover {
-    opacity: 1;
-    box-shadow: 0 0 25px #999;
-}
-#work_1 img {
-    width: 100%;
-    height: auto;
 }
 
 .card {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
     flex-basis: 50%;
+    background-size:contain;
+    background-position: center;
+    margin: 10px;
+    border-radius: 25px;
+    opacity: 0.7;
+    box-shadow: 3px 3px 5px black;
+    transition: .3s;
+    position: relative;
 }
+
+.card:hover {
+    opacity: 1;
+    box-shadow: 0 0 25px #999;
+}
+
 .card h3 {
-    bottom:11px;
-    left:18px;
+    display: flex;
+    bottom: 11px;
+    left: 10px;
     font-family: var(--font);
     color: var(--text);
     background-color: rgb(128, 128, 128, 25%);
@@ -145,8 +143,38 @@ article section {
     position: absolute;
 }
 
+#work_1 {
+    height: 300px;
+    flex-basis: 100%;
+    background-image: url("./images/Horiseon.png");
+}
+
+#work_2 {
+    height: 250px;
+    flex-basis: 50%;
+    background-image: url('./assets/images/night-street-zoom.png');
+}
+
+#work_3 {
+    height: 250px;
+    flex-basis: 50%;
+    background-image: url('./assets/images/dock-lake.jpeg');
+}
+
+#work_4 {
+    height: 250px;
+    flex-basis: 50%;
+    background-image: url('./assets/images/railroad-fog.jpeg');
+}
+
+#work_5 {
+    height: 250px;
+    flex-basis: 50%;
+    background-image: url('./assets/images/skyscraper-up.jpeg');
+}
+
 .contact h2 {
-    padding-right:13%;
+    padding-right: 13%;
     margin-right: 8%;
 }
 
