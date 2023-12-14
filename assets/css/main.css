@@ -111,6 +111,22 @@ article section {
     flex-wrap: wrap;
 }
 
+@media screen and (width:1119px) {
+    .container {
+        display: block;
+    }
+
+    .card {
+        background-size:cover;
+        background-position: center;
+        margin: 5px;
+        border-radius: 25px;
+        opacity: .88;
+        box-shadow: 3px 3px 5px black;
+        position: relative;
+    }
+}
+
 .card {
     background-size:cover;
     background-position: center;
@@ -151,31 +167,31 @@ article section {
 #work_1 {
     height: 300px;
     flex-basis: 100%;
-    background-image: url(../images/Horiseon.png);
+    background-image: url(../images/Eventageous.png);
 }
 
 #work_2 {
     height: 200px;
     flex-basis: 48%;
-    background-image: url(../images/Terra-Eataly-LA.jpeg);
+    background-image: url(../images/Dexperience.png);
 }
 
 #work_3 {
     height: 200px;
     flex-basis: 48%;
-    background-image: url(../images/Bike-Shop.jpeg);
+    background-image: url(../images/PasswordGenerator.png);
 }
 
 #work_4 {
     height: 200px;
     flex-basis: 48%;
-    background-image: url(../images/railroad-fog.jpeg);
+    background-image: url(../images/Horiseon.png);
 }
 
 #work_5 {
     height: 200px;
     flex-basis: 48%;
-    background-image: url(../images/skyscraper-up.jpeg);
+    background-image: url(../images/Terra-Eataly-LA.jpeg);
 }
 
 .contact h2 {
